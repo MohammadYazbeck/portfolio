@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(/fonts/Lato-Regular.ttf) format("ttf");
+  }
+}
+
+.active {
+  border-bottom: 5px;
+  border-color: #a7a7a7;
+}
+
+::selection {
+  background-color: #4c5372;
+  color: #e6e6e6;
+  -webkit-text-fill-color: #e6e6e6;
+}
+
+::-moz-selection {
+  background-color: #4c5372;
+  color: #e6e6e6;
+  -webkit-text-fill-color: #e6e6e6;
+}
+
+::-webkit-selection {
+  background-color: #4c5372;
+  color: #e6e6e6;
+  -webkit-text-fill-color: #e6e6e6;
+}
+
+html,
+body {
+  @apply no-scrollbar;
+  height: 100%;
+}
+.carousel .thumbs {
+  @apply mt-4 flex justify-center gap-2; /* Align and space thumbnails */
+}
+
+.carousel .thumb {
+  @apply cursor-pointer overflow-hidden rounded-lg border-2 transition-all duration-200 ease-in-out; /* Base style */
+  width: 100%; /* Thumbnail size */
+  height: 100%;
+  border-color: black; /* Default for dark mode */
+}
+
+.carousel .thumb:not(.selected) {
+  @apply border-white dark:border-black; /* Non-selected: white in light mode, black in dark mode */
+}
+
+.carousel .thumb.selected {
+  @apply border-black dark:border-white; /* Selected: black in light mode, white in dark mode */
+  position: relative; /* For pseudo-element styling */
+}
+
+.carousel .thumb img {
+  @apply h-full w-full rounded-md object-cover; /* Uniform thumbnail appearance */
+}

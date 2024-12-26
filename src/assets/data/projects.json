@@ -1,0 +1,238 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "projectName": "Digicom",
+      "summary": "Digicom is a robust request management solution that bridges the gap between clients and administrators. Built for efficiency, the system comprises a responsive admin dashboard and a client-facing mobile app, each tailored to provide seamless user experiences. Administrators have access to a dashboard to review, accept, or decline requests, while clients can submit requests with photos, track their status, and receive real-time updates.",
+      "tools": [
+        {
+          "name": "React (Vite)",
+          "photo_link": "src/assets/images/tech/react.png"
+        },
+        {
+          "name": "Tailwind CSS",
+          "photo_link": "src/assets/images/tech/tailwind.png"
+        },
+        {
+          "name": "React Query",
+          "photo_link": "src/assets/images/tech/reactQuery.png"
+        },
+        {
+          "name": "Expo (React Native)",
+          "photo_link": "src/assets/images/tech/expo.png"
+        },
+        {
+          "name": "FCM (Firebase Cloud Messaging)",
+          "photo_link": "src/assets/images/tech/firbase.png"
+        },
+        {
+          "name": "Express.js",
+          "photo_link": "src/assets/images/tech/express.png"
+        },
+        {
+          "name": "PostgreSQL",
+          "photo_link": "src/assets/images/tech/postgresSQL.png"
+        },
+        {
+          "name": "Prisma",
+          "photo_link": "src/assets/images/tech/prisma.png"
+        }
+      ],
+      "features": [
+        "Admin Dashboard",
+        "Real-time Notifications",
+        "Mobile App",
+        "File Uploads",
+        "Excel Export",
+        "Request Status Tracking",
+        "JWT Authentication"
+      ],
+      "screenshots": [
+        {
+          "title": "11",
+          "link": "src/assets/images/digicom/11.png"
+        },
+        {
+          "title": "12",
+          "link": "src/assets/images/digicom/12.png"
+        },
+        {
+          "title": "13",
+          "link": "src/assets/images/digicom/13.png"
+        },
+        {
+          "title": "24",
+          "link": "src/assets/images/digicom/14.png"
+        }
+      ],
+      "isLive": false,
+      "liveLink": "",
+      "role": ["Front-End Developer"],
+      "projectLink": ""
+    },
+    {
+      "id": 2,
+      "projectName": "A-Gadget",
+      "summary": "A-Gadget is a simple online store where users can browse products, add them to their cart, and place orders. Built with a full-stack approach, the project provides a seamless shopping experience, allowing users to view products by category, adjust quantities, and manage their carts. Authentication and data storage are powered by Supabase.",
+      "tools": [
+        {
+          "name": "React (Vite)",
+          "photo_link": "src/assets/images/tech/react.png"
+        },
+        {
+          "name": "Tailwind CSS",
+          "photo_link": "src/assets/images/tech/tailwind.png"
+        },
+        {
+          "name": "Redux Toolkit (State Management)",
+          "photo_link": "src/assets/images/tech/redux.png"
+        },
+        {
+          "name": "React Query",
+          "photo_link": "src/assets/images/tech/reactQuery.png"
+        },
+        {
+          "name": "Supabase",
+          "photo_link": "src/assets/images/tech/supabase.png"
+        }
+      ],
+      "features": [
+        "Browsing by Category",
+        "Cart Management",
+        "Quantity Adjustment",
+        "Authentication",
+        "Order Placement",
+        "Real-time Data Fetching"
+      ],
+      "screenshots": [
+        {
+          "title": "40",
+          "link": "src/assets/images/a-gadget/40.png"
+        }
+      ],
+      "isLive": true,
+      "liveLink": "https://mohammadyazbeck.github.io/a-gadget/#/home",
+      "role": ["Full-Stack Developer"],
+      "projectLink": "https://example.com/projects/a-gadget"
+    },
+    {
+      "id": 3,
+      "projectName": "Gymenai",
+      "summary": "Gymenai is an advanced gym management solution that leverages modern technology to provide a user-friendly, web-based system for gym owners, employees, and members. With AI-powered features for real-time exercise validation and food recognition, Gymenai offers a comprehensive management experience designed to address current limitations and anticipate future needs in the fitness industry.",
+      "tools": [
+        {
+          "name": "React (Vite)",
+          "photo_link": "src/assets/images/tech/react.png"
+        },
+        {
+          "name": "Tailwind CSS",
+          "photo_link": "src/assets/images/tech/tailwind.png"
+        },
+        {
+          "name": "Redux Toolkit (State Management)",
+          "photo_link": "src/assets/images/tech/redux.png"
+        }
+      ],
+      "features": [
+        "User-Friendly Interface",
+        "Employee Management",
+        "Interactive Membership Application",
+        "Exercise Validation (AI)",
+        "Nutritional Insights (AI)",
+        "Notification System",
+        "Reporting Tools",
+        "Member-Coach Interaction",
+        "Secure Blacklisting",
+        "Support & Communication"
+      ],
+      "screenshots": [
+        {
+          "title": "30",
+          "link": "src/assets/images/gymenai/30.png"
+        },
+        {
+          "title": "31",
+          "link": "src/assets/images/gymenai/31.png"
+        },
+        {
+          "title": "32",
+          "link": "src/assets/images/gymenai/32.png"
+        },
+        {
+          "title": "33",
+          "link": "src/assets/images/gymenai/33.png"
+        },
+        {
+          "title": "34",
+          "link": "src/assets/images/gymenai/34.png"
+        },
+        {
+          "title": "35",
+          "link": "src/assets/images/gymenai/35.png"
+        },
+        {
+          "title": "36",
+          "link": "src/assets/images/gymenai/36.png"
+        },
+        {
+          "title": "38",
+          "link": "src/assets/images/gymenai/37.png"
+        }
+      ],
+      "role": ["Front-End Developer", "System Analysis & Design"],
+      "isLive": false,
+      "liveLink": "",
+      "projectLink": "https://example.com/projects/gymenai"
+    },
+    {
+      "id": 4,
+      "projectName": "DigiCard",
+      "summary": "This digital business card application transforms traditional business card sharing into a modern, digital experience. With features like multiple card designs, easy sharing options, and a user-friendly interface, it allows users to store and manage all contact cards in one place. Cards can be shared via email, NFC, and QR codes, and users can easily add contacts by scanning these codes or reading NFC tags.",
+      "tools": [
+        {
+          "name": "Flutter",
+          "photo_link": "src/assets/images/tech/flutter.png"
+        },
+        {
+          "name": "GetX (State Management)",
+          "photo_link": "src/assets/images/tech/GetX.png"
+        }
+      ],
+      "features": [
+        "Card Sharing",
+        "Customizable Card Designs",
+        "Contact Management",
+        "Quick Editing and Creation",
+        "Multiple Sharing Options (Email, NFC, QR Code)",
+        "NFC and QR Code Scanning for Contact Addition",
+        "Profile Customization"
+      ],
+      "screenshots": [
+        {
+          "title": "21",
+          "link": "src/assets/images/digicard/21.png"
+        },
+        {
+          "title": "22",
+          "link": "src/assets/images/digicard/22.png"
+        },
+        {
+          "title": "23",
+          "link": "src/assets/images/digicard/23.png"
+        },
+        {
+          "title": "24",
+          "link": "src/assets/images/digicard/24.png"
+        },
+        {
+          "title": "25",
+          "link": "src/assets/images/digicard/25.png"
+        }
+      ],
+      "isLive": false,
+      "liveLink": "",
+      "role": ["Mobile App Developer", "System Analysis & Design"],
+      "projectLink": "https://example.com/projects/digital-business-card"
+    }
+  ]
+}
