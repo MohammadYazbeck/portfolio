@@ -7,35 +7,35 @@
       "tools": [
         {
           "name": "React (Vite)",
-          "photo_link": "src/assets/images/tech/react.png"
+          "photo_link": "./src/assets/images/tech/react.png"
         },
         {
           "name": "Tailwind CSS",
-          "photo_link": "src/assets/images/tech/tailwind.png"
+          "photo_link": "./src/assets/images/tech/tailwind.png"
         },
         {
           "name": "React Query",
-          "photo_link": "src/assets/images/tech/reactQuery.png"
+          "photo_link": "./src/assets/images/tech/reactQuery.png"
         },
         {
           "name": "Expo (React Native)",
-          "photo_link": "src/assets/images/tech/expo.png"
+          "photo_link": "./src/assets/images/tech/expo.png"
         },
         {
           "name": "FCM (Firebase Cloud Messaging)",
-          "photo_link": "src/assets/images/tech/firbase.png"
+          "photo_link": "./src/assets/images/tech/firbase.png"
         },
         {
           "name": "Express.js",
-          "photo_link": "src/assets/images/tech/express.png"
+          "photo_link": "./src/assets/images/tech/express.png"
         },
         {
           "name": "PostgreSQL",
-          "photo_link": "src/assets/images/tech/postgresSQL.png"
+          "photo_link": "./src/assets/images/tech/postgresSQL.png"
         },
         {
           "name": "Prisma",
-          "photo_link": "src/assets/images/tech/prisma.png"
+          "photo_link": "./src/assets/images/tech/prisma.png"
         }
       ],
       "features": [
@@ -50,19 +50,19 @@
       "screenshots": [
         {
           "title": "11",
-          "link": "src/assets/images/digicom/11.png"
+          "link": "./src/assets/images/digicom/11.png"
         },
         {
           "title": "12",
-          "link": "src/assets/images/digicom/12.png"
+          "link": "./src/assets/images/digicom/12.png"
         },
         {
           "title": "13",
-          "link": "src/assets/images/digicom/13.png"
+          "link": "./src/assets/images/digicom/13.png"
         },
         {
           "title": "24",
-          "link": "src/assets/images/digicom/14.png"
+          "link": "./src/assets/images/digicom/14.png"
         }
       ],
       "isLive": false,
@@ -77,23 +77,23 @@
       "tools": [
         {
           "name": "React (Vite)",
-          "photo_link": "src/assets/images/tech/react.png"
+          "photo_link": "./src/assets/images/tech/react.png"
         },
         {
           "name": "Tailwind CSS",
-          "photo_link": "src/assets/images/tech/tailwind.png"
+          "photo_link": "./src/assets/images/tech/tailwind.png"
         },
         {
           "name": "Redux Toolkit (State Management)",
-          "photo_link": "src/assets/images/tech/redux.png"
+          "photo_link": "./src/assets/images/tech/redux.png"
         },
         {
           "name": "React Query",
-          "photo_link": "src/assets/images/tech/reactQuery.png"
+          "photo_link": "./src/assets/images/tech/reactQuery.png"
         },
         {
           "name": "Supabase",
-          "photo_link": "src/assets/images/tech/supabase.png"
+          "photo_link": "./src/assets/images/tech/supabase.png"
         }
       ],
       "features": [
@@ -107,7 +107,7 @@
       "screenshots": [
         {
           "title": "40",
-          "link": "src/assets/images/a-gadget/40.png"
+          "link": "./src/assets/images/a-gadget/40.png"
         }
       ],
       "isLive": true,
@@ -122,15 +122,15 @@
       "tools": [
         {
           "name": "React (Vite)",
-          "photo_link": "src/assets/images/tech/react.png"
+          "photo_link": "./src/assets/images/tech/react.png"
         },
         {
           "name": "Tailwind CSS",
-          "photo_link": "src/assets/images/tech/tailwind.png"
+          "photo_link": "./src/assets/images/tech/tailwind.png"
         },
         {
           "name": "Redux Toolkit (State Management)",
-          "photo_link": "src/assets/images/tech/redux.png"
+          "photo_link": "./src/assets/images/tech/redux.png"
         }
       ],
       "features": [
@@ -148,35 +148,35 @@
       "screenshots": [
         {
           "title": "30",
-          "link": "src/assets/images/gymenai/30.png"
+          "link": "./src/assets/images/gymenai/30.png"
         },
         {
           "title": "31",
-          "link": "src/assets/images/gymenai/31.png"
+          "link": "./src/assets/images/gymenai/31.png"
         },
         {
           "title": "32",
-          "link": "src/assets/images/gymenai/32.png"
+          "link": "./src/assets/images/gymenai/32.png"
         },
         {
           "title": "33",
-          "link": "src/assets/images/gymenai/33.png"
+          "link": "./src/assets/images/gymenai/33.png"
         },
         {
           "title": "34",
-          "link": "src/assets/images/gymenai/34.png"
+          "link": "./src/assets/images/gymenai/34.png"
         },
         {
           "title": "35",
-          "link": "src/assets/images/gymenai/35.png"
+          "link": "./src/assets/images/gymenai/35.png"
         },
         {
           "title": "36",
-          "link": "src/assets/images/gymenai/36.png"
+          "link": "./src/assets/images/gymenai/36.png"
         },
         {
           "title": "38",
-          "link": "src/assets/images/gymenai/37.png"
+          "link": "./src/assets/images/gymenai/37.png"
         }
       ],
       "role": ["Front-End Developer", "System Analysis & Design"],
@@ -191,11 +191,11 @@
       "tools": [
         {
           "name": "Flutter",
-          "photo_link": "src/assets/images/tech/flutter.png"
+          "photo_link": "./src/assets/images/tech/flutter.png"
         },
         {
           "name": "GetX (State Management)",
-          "photo_link": "src/assets/images/tech/GetX.png"
+          "photo_link": "./src/assets/images/tech/GetX.png"
         }
       ],
       "features": [
@@ -210,23 +210,23 @@
       "screenshots": [
         {
           "title": "21",
-          "link": "src/assets/images/digicard/21.png"
+          "link": "./src/assets/images/digicard/21.png"
         },
         {
           "title": "22",
-          "link": "src/assets/images/digicard/22.png"
+          "link": "./src/assets/images/digicard/22.png"
         },
         {
           "title": "23",
-          "link": "src/assets/images/digicard/23.png"
+          "link": "./src/assets/images/digicard/23.png"
         },
         {
           "title": "24",
-          "link": "src/assets/images/digicard/24.png"
+          "link": "./src/assets/images/digicard/24.png"
         },
         {
           "title": "25",
-          "link": "src/assets/images/digicard/25.png"
+          "link": "./src/assets/images/digicard/25.png"
         }
       ],
       "isLive": false,

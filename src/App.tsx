@@ -5,7 +5,7 @@ import MainPage from "./pages/MainPage";
 function App() {
   const router = createBrowserRouter([
     {
-      path: "/",
+      path: "/portfolio",
       element: <AppLayout />,
       children: [
         {

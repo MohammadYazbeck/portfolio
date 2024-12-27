@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import Project from "./Project";
 import ProjectsNavigator from "./ProjectsNavigator";
 import data from "../assets/data/projects.json";
