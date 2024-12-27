@@ -28,7 +28,7 @@ export default function MoreSection() {
           {/* Education Section */}
           <div className="flex animate-lr flex-col items-center justify-center rounded-3xl bg-gradient-to-br from-gray-100 to-gray-300 p-8 shadow-md transition duration-300 hover:shadow-lg dark:from-gray-900 dark:to-gray-900/80 dark:shadow-xl">
             <img
-              src="./src/assets/images/aiu.png"
+              src="/portfolio/images/aiu.png"
               alt="Arab International University Logo"
               className="mb-6 h-24 w-24 rounded-full border border-gray-200 shadow-sm dark:border-gray-600"
             />
@@ -103,19 +103,19 @@ export default function MoreSection() {
             {[
               {
                 href: "https://www.linkedin.com/in/mohammadyazbeck",
-                imgSrc: "./src/assets/images/linkedin.png",
+                imgSrc: "/portfolio/images/linkedin.png",
               },
               {
                 href: "https://github.com/MohammadYazbeck",
-                imgSrc: "./src/assets/images/github-black.png",
+                imgSrc: "/portfolio/images/github-black.png",
               },
               {
                 href: "https://www.facebook.com/Mohammad.Yazbeckk/",
-                imgSrc: "./src/assets/images/facebook.png",
+                imgSrc: "/portfolio/images/facebook.png",
               },
               {
                 href: "https://www.instagram.com/mohammadyazbeck_/",
-                imgSrc: "./src/assets/images/instagram.png",
+                imgSrc: "/portfolio/images/instagram.png",
               },
             ].map(({ href, imgSrc }, idx) => (
               <a

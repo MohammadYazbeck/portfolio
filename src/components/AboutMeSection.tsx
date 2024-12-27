@@ -6,7 +6,7 @@ export default function AboutMeSection() {
     >
       <div className="mt-4 h-[15rem] w-[15rem] sm:h-[17rem] sm:w-[17rem] lg:mt-0 lg:h-[25rem] lg:w-[25rem]">
         <img
-          src="src\assets\images\pic.jpg"
+          src="/portfolio/images/pic.jpg"
           className="animate-lrSmall rounded-full border border-blue-gray-900 shadow-2xl shadow-gray-300 sm:animate-lr dark:shadow-gray-800/80"
         />
       </div>
@@ -29,7 +29,7 @@ export default function AboutMeSection() {
           >
             <img
               title="LinkedIn"
-              src="src\assets\images\linkedin.png"
+              src="/portfolio/images/linkedin.png"
               className="h-10 w-10 cursor-pointer rounded-full hover:shadow-sm hover:shadow-blue-600 sm:h-12 sm:w-12"
             />
           </a>
@@ -42,7 +42,7 @@ export default function AboutMeSection() {
             >
               <img
                 title="Github"
-                src="src\assets\images\github-black.png"
+                src="/portfolio/images/github-black.png"
                 className="h-10 w-10 cursor-pointer rounded-full hover:shadow-sm hover:shadow-black sm:h-12 sm:w-12"
               />
             </a>
@@ -55,7 +55,7 @@ export default function AboutMeSection() {
             >
               <img
                 title="Github"
-                src="src\assets\images\github-white.png"
+                src="/portfolio/images/github-white.png"
                 className="h-10 w-10 cursor-pointer rounded-full hover:shadow-sm hover:shadow-gray-400 sm:h-12 sm:w-12"
               />
             </a>
