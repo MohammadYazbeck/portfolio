@@ -14,7 +14,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects"
-      className="flex w-screen flex-col items-center justify-start pt-20 sm:h-full md:space-x-16 lg:pt-0 dark:bg-black"
+      className="flex h-full w-screen flex-col items-center justify-start pt-20 md:space-x-16 lg:pt-0 dark:bg-black"
     >
       <div className="flex flex-col items-center pt-8">
         <ProjectsNavigator

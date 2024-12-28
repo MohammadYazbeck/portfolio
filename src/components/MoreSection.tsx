@@ -50,25 +50,25 @@ export default function MoreSection() {
           </div>
 
           {/* Skills Section */}
-          <div className="flex flex-col items-center justify-center rounded-3xl bg-gradient-to-br from-gray-100 to-gray-300 p-8 shadow-md transition duration-300 hover:shadow-lg dark:from-gray-900 dark:to-gray-900/80 dark:shadow-xl">
+          <div className="flex flex-col items-center justify-center rounded-3xl bg-gradient-to-br from-gray-100 to-gray-300 px-5 py-8 shadow-md transition duration-300 hover:shadow-lg dark:from-gray-900 dark:to-gray-900/80 dark:shadow-xl">
             <h2 className="mb-3 rounded-full bg-gradient-to-bl from-gray-800 to-gray-900 p-2 px-4 text-xl font-bold text-white dark:bg-gradient-to-br dark:from-gray-200 dark:to-gray-300 dark:text-black">
               Technical Skills
             </h2>
             <ul className="mt-4 space-y-2 text-center text-lg text-gray-600 dark:text-gray-300">
-              <li className="flex justify-start">
-                <span className="mr-4 font-medium text-gray-800 dark:text-gray-200">
+              <li className="flex items-center justify-start">
+                <span className="mr-4 text-nowrap text-sm font-medium text-gray-800 sm:text-base dark:text-gray-200">
                   Front-End:
                 </span>{" "}
                 <p>React, React Native (Expo)</p>
               </li>
-              <li className="flex justify-start">
-                <span className="mr-4 font-medium text-gray-800 dark:text-gray-200">
+              <li className="flex items-center justify-start">
+                <span className="mr-4 text-nowrap text-sm font-medium text-gray-800 sm:text-base dark:text-gray-200">
                   Back-End:
                 </span>{" "}
                 <p>Express.js, REST APIs, Prisma</p>
               </li>
-              <li className="flex justify-start">
-                <span className="mr-4 font-medium text-gray-800 dark:text-gray-200">
+              <li className="flex items-center justify-start">
+                <span className="mr-4 text-sm font-medium text-gray-800 sm:text-base dark:text-gray-200">
                   Languages:
                 </span>{" "}
                 <p>JavaScript, TypeScript, Python, C#</p>

@@ -7,7 +7,7 @@ export default function AboutMeSection() {
       <div className="mt-4 h-[15rem] w-[15rem] sm:h-[17rem] sm:w-[17rem] lg:mt-0 lg:h-[25rem] lg:w-[25rem]">
         <img
           src="/portfolio/images/pic.jpg"
-          className="animate-lrSmall rounded-full border border-blue-gray-900 shadow-2xl shadow-gray-300 sm:animate-lr dark:shadow-gray-800/80"
+          className="animate-lrSmall rounded-full border border-blue-gray-900 shadow-2xl shadow-gray-300 sm:animate-lr dark:shadow-white/10"
         />
       </div>
       <div className="animate-rlSmall px-8 sm:mt-8 sm:animate-rl lg:h-[27rem] lg:w-[35rem] xl:w-[40rem]">
