@@ -12,6 +12,15 @@ export default withMT({
     },
     extend: {
       keyframes: {
+        falling: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(100%)" }, // Star moves downward
+        },
+        drift: {
+          "0%": { transform: "translateX(0)" },
+          "50%": { transform: "translateX(10px)" }, // Slight drift to the right
+          "100%": { transform: "translateX(0)" }, // Drifts back to the original position
+        },
         lr: {
           "0%": { transform: "translateX(-300px)", opacity: 0 },
           "100%": { transform: "translateX(0)", opacity: 1 },
@@ -44,7 +53,10 @@ export default withMT({
         rlSmall: "rlSmall 1s ease-in-out forwards",
         bt: "bt 0.5s ease-in-out forwards",
         tb: "tb 0.5s ease-in-out forwards",
+        falling: "falling 4s ease-in-out infinite", // Duration and loop for falling stars
+        drift: "drift 4s ease-in-out infinite",
       },
+
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",
         DEFAULT: "0 2px 4px var(--tw-shadow-color)",
