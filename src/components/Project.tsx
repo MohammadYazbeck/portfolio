@@ -33,6 +33,8 @@ export default function Project({ project }: { project: ProjectsSectionData }) {
           <a
             title="GitHub Link"
             href={project.projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
             className="mr-auto flex items-end text-4xl shadow-gray-400 text-shadow-lg lg:text-5xl dark:text-white dark:shadow-gray-600"
           >
             {project.projectName}

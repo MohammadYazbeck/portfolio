@@ -113,7 +113,7 @@
       "isLive": true,
       "liveLink": "https://mohammadyazbeck.github.io/a-gadget/#/home",
       "role": ["Full-Stack Developer"],
-      "projectLink": "https://example.com/projects/a-gadget"
+      "projectLink": "https://github.com/MohammadYazbeck/a-gadget"
     },
     {
       "id": 3,
@@ -182,7 +182,7 @@
       "role": ["Front-End Developer", "System Analysis & Design"],
       "isLive": false,
       "liveLink": "",
-      "projectLink": "https://example.com/projects/gymenai"
+      "projectLink": "https://github.com/MohammadYazbeck/Gymenai"
     },
     {
       "id": 4,
@@ -232,7 +232,7 @@
       "isLive": false,
       "liveLink": "",
       "role": ["Mobile App Developer", "System Analysis & Design"],
-      "projectLink": "https://example.com/projects/digital-business-card"
+      "projectLink": "https://github.com/MohammadYazbeck/DigitalBusinessCard"
     }
   ]
 }
