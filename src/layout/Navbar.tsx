@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 import FloatingActionButton from "../components/FloatingActionButton";
@@ -6,7 +6,18 @@ import { DrawerWithNavigation } from "../components/NavigationDrawer";
 
 export default function Navbar() {
   const location = useLocation();
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const savedPreference = localStorage.getItem("theme");
+    return savedPreference === "dark";
+  });
+
+  useEffect(() => {
+    if (isDarkMode) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [isDarkMode]);
 
   function scrollTo(id: string) {
     document.getElementById(id)?.scrollIntoView({
@@ -15,8 +26,11 @@ export default function Navbar() {
   }
 
   function toggleDarkMode() {
-    setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle("dark");
+    const newMode = !isDarkMode;
+    setIsDarkMode(newMode);
+    document.body.classList.toggle("dark", newMode);
+    // Save the preference to localStorage
+    localStorage.setItem("theme", newMode ? "dark" : "light");
   }
 
   return (
@@ -28,7 +42,11 @@ export default function Navbar() {
         <div className="hidden space-x-10 p-3 md:flex md:items-center">
           <div
             onClick={() => scrollTo("about-me")}
-            className={`cursor-pointer rounded-full p-3 shadow-gray-400 hover:bg-black hover:text-white md:text-lg lg:text-xl dark:hover:bg-white dark:hover:text-black ${location.hash === "#about-me" ? "bg-black text-white shadow-md shadow-gray-500 dark:bg-white dark:text-black dark:shadow-gray-600" : "text-shadow"}`}
+            className={`cursor-pointer rounded-full p-3 shadow-gray-400 hover:bg-black hover:text-white md:text-lg lg:text-xl dark:hover:bg-white dark:hover:text-black ${
+              location.hash === "#about-me"
+                ? "bg-black text-white shadow-md shadow-gray-500 dark:bg-white dark:text-black dark:shadow-gray-600"
+                : "text-shadow"
+            }`}
           >
             About me
           </div>
