@@ -1,19 +1,16 @@
-import FallingStars from "./FallingStars";
-
 export default function AboutMeSection() {
   return (
     <section
       id="about-me"
       className="relative flex h-full w-full flex-col items-center justify-start pt-[20%] sm:pt-[15%] lg:h-full lg:flex-row lg:justify-center lg:space-x-16 lg:pb-[25%]"
     >
-      <FallingStars />
-
       {/* Profile Picture */}
       <div className="z-10 mt-4 flex h-[15rem] w-[15rem] items-center justify-center sm:h-[17rem] sm:w-[17rem] lg:mt-0 lg:h-[25rem] lg:w-[25rem]">
         <div className="flex h-full w-full transform items-center justify-center overflow-hidden rounded-[65%/70%_39%_80%_50%] border border-blue-gray-900 shadow-2xl shadow-gray-300 drop-shadow-[0px_15px_3px_rgba(0,0,0,0.25)] sm:animate-lr dark:shadow-gray-800/80">
           <img
             src="/portfolio/images/pic.jpg"
             className="h-full w-full object-cover"
+            loading="lazy"
           />
         </div>
       </div>
