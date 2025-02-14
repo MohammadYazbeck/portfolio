@@ -86,7 +86,7 @@ export default function MoreSection() {
             <p className="mt-4 text-lg text-gray-700 dark:text-gray-400">
               Location:{" "}
               <span className="mr-4 font-medium text-gray-900 dark:text-gray-200">
-                Nabatieh, Lebanon
+                Lebanon
               </span>
             </p>
             <p className="text-lg text-gray-700 dark:text-gray-400">
