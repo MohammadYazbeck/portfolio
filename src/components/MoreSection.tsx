@@ -65,7 +65,13 @@ export default function MoreSection() {
                 <span className="mr-4 text-nowrap text-sm font-medium text-gray-800 sm:text-base dark:text-gray-200">
                   Back-End:
                 </span>{" "}
-                <p>Express.js, REST APIs, Prisma</p>
+                <p>Express.js, REST APIs, Prisma, SQLite, PostgreSQL</p>
+              </li>
+              <li className="flex items-center justify-start">
+                <span className="mr-4 text-nowrap text-sm font-medium text-gray-800 sm:text-base dark:text-gray-200">
+                  Full-Stack:
+                </span>{" "}
+                <p>Next.js</p>
               </li>
               <li className="flex items-center justify-start">
                 <span className="mr-4 text-sm font-medium text-gray-800 sm:text-base dark:text-gray-200">
