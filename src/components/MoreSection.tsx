@@ -35,7 +35,7 @@ export default function MoreSection() {
             }}
           >
             {/* Overlay for Blur & Fade Effect */}
-            <div className="absolute inset-0 rounded-3xl bg-white/80 backdrop-blur-sm dark:bg-black/60"></div>
+            <div className="absolute inset-0 rounded-3xl bg-black/60 backdrop-blur-sm dark:bg-black/60"></div>
 
             {/* Content */}
             <div className="relative z-10 flex flex-col items-center">
@@ -44,18 +44,18 @@ export default function MoreSection() {
                 alt="Arab International University Logo"
                 className="mb-6 h-24 w-24 rounded-full border border-gray-200 shadow-sm dark:border-gray-600"
               />
-              <h2 className="text-xl font-semibold text-gray-900 dark:text-white">
+              <h2 className="text-xl font-semibold text-white">
                 Arab International University
               </h2>
-              <p className="mt-2 text-lg text-gray-600 dark:text-gray-300">
+              <p className="mt-2 text-lg text-gray-300">
                 Major:{" "}
-                <span className="mr-4 font-medium text-gray-800 dark:text-gray-200">
+                <span className="mr-4 font-medium text-gray-200">
                   Software Engineering
                 </span>
               </p>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
+              <p className="text-lg text-gray-300">
                 GPA:{" "}
-                <span className="mr-4 font-medium text-gray-800 dark:text-gray-200">
+                <span className="mr-4 font-medium text-gray-200">
                   73% (2.65/4.0)
                 </span>
               </p>
@@ -113,14 +113,14 @@ export default function MoreSection() {
         </div>
 
         {/* Contact Section */}
-        <div className="flex flex-col items-center justify-around rounded-3xl bg-gradient-to-br from-gray-100 to-gray-300 p-5 shadow-md transition duration-300 hover:shadow-lg lg:flex-row lg:space-x-12 dark:from-gray-900 dark:to-gray-900/80 dark:shadow-xl">
+        <div className="flex flex-col items-center justify-around rounded-3xl bg-gradient-to-br from-gray-100 to-gray-300 p-5 px-2 shadow-md transition duration-300 hover:shadow-lg lg:mb-0 lg:flex-row lg:space-x-12 dark:from-gray-900 dark:to-gray-900/80 dark:shadow-xl">
           <div className="mb-6 text-center lg:mb-0 lg:text-left">
             <div className="flex flex-col items-start justify-center">
               <p className="flex items-center space-x-2 text-lg text-gray-700 dark:text-gray-400">
-                <img className="h-8 w-8" src="/portfolio/images/mail.png" />:{" "}
+                <img className="h-8 w-8" src="/portfolio/images/mail.png" />
                 <a
                   href="mailto:mohammadyazbeckk@gmail.com"
-                  className="mr-4 font-medium text-indigo-600 hover:underline dark:text-indigo-400"
+                  className="font-medium text-indigo-600 hover:underline dark:text-indigo-400"
                 >
                   mohammadyazbeckk@gmail.com
                 </a>
@@ -162,7 +162,7 @@ export default function MoreSection() {
           </div>
           <div className="mt-5 flex justify-center lg:mt-0">
             <a
-              href="./MohammadYazbeck.pdf" // Replace with the actual file path
+              href="./MohammadYazbeck.pdf"
               download="MohammadYazbeck.pdf"
               ref={cvRef}
               style={{ display: "none" }}
@@ -172,7 +172,7 @@ export default function MoreSection() {
             <div className="flex justify-center">
               <button
                 onClick={handleDownload}
-                className="group relative flex h-auto w-[130px] cursor-pointer items-center justify-center overflow-hidden rounded-full border-0 bg-gray-900 px-4 py-3 text-xl font-normal text-red-500 transition-all duration-100 lg:w-[145px] dark:bg-gray-200"
+                className="group relative flex h-auto w-[140px] cursor-pointer items-center justify-center overflow-hidden rounded-full border-0 bg-gray-900 px-4 py-3 text-xl font-normal text-red-500 transition-all duration-100 lg:w-[145px] dark:bg-gray-200"
               >
                 <p className="translate-x-0 text-lg font-bold text-gray-200 transition-all duration-200 group-hover:translate-x-[-100%] group-hover:opacity-0 lg:text-xl dark:text-black">
                   Personal CV

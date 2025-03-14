@@ -1,15 +1,32 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Project from "./Project";
 import ProjectsNavigator from "./ProjectsNavigator";
 import data from "../assets/data/projects.json";
 
 export default function ProjectsSection() {
   const [activeProjectId, setActiveProjectId] = useState(0);
+  const sectionRef = useRef<HTMLElement | null>(null);
 
   // Create refs for each project (although we won't need them for scrolling)
   const projectRefs = useRef<(HTMLDivElement | null)[]>(
     data.projects.map(() => null),
   );
+
+  useEffect(() => {
+    // Function to check hash and scroll if needed
+    const handleHashChange = () => {
+      if (window.location.hash === "#projects" && sectionRef.current) {
+        sectionRef.current.scrollIntoView({ behavior: "smooth" });
+      }
+    };
+
+    // Check on mount in case user lands directly on #projects
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, []);
 
   return (
     <section
@@ -24,7 +41,7 @@ export default function ProjectsSection() {
         />
       </div>
 
-      <div className="mt-7 flex w-[92%] gap-10 overflow-x-hidden rounded-t-3xl no-scrollbar xl:w-[88%] 2xl:overflow-hidden">
+      <div className="flex w-[92%] gap-10 overflow-x-hidden rounded-t-3xl no-scrollbar xl:w-[88%] 2xl:overflow-hidden">
         {data.projects.map((project, index) => (
           <div
             ref={(el) => (projectRefs.current[index] = el)}

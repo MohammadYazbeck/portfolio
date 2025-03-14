@@ -27,7 +27,7 @@ export default function FloatingActionButton() {
       className={`${location.hash === "#projects" || location.hash === "#more" ? "opacity-100" : "opacity-0"} transition-opacity duration-300 ease-in`}
       onClick={scrollToTop}
     >
-      <Button className="grid h-[3rem] w-[3rem] items-center justify-center rounded-full bg-black/85 md:h-[3.5rem] md:w-[3.5rem] dark:bg-gray-200">
+      <Button className="grid h-[3.2rem] w-[3rem] items-center justify-center rounded-full bg-black/85 md:h-[3.5rem] md:w-[3.5rem] dark:bg-gray-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
