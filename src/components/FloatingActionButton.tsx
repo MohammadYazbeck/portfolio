@@ -24,17 +24,17 @@ export default function FloatingActionButton() {
   return (
     <div
       title="Scroll Up"
-      className={`${offset > 70 ? "opacity-100" : "opacity-0"} transition-opacity duration-300 ease-in`}
+      className={`${location.hash === "#projects" || location.hash === "#more" ? "opacity-100" : "opacity-0"} transition-opacity duration-300 ease-in`}
       onClick={scrollToTop}
     >
-      <Button className="grid h-[3.7rem] w-[3.7rem] items-center justify-center rounded-full bg-black/85 md:h-[4.2rem] md:w-[4.2rem] dark:bg-gray-200">
+      <Button className="grid h-[3rem] w-[3rem] items-center justify-center rounded-full bg-black/85 md:h-[3.5rem] md:w-[3.5rem] dark:bg-gray-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
           strokeWidth={2}
           stroke="currentColor"
-          className="size-7 text-white md:size-8 dark:text-black"
+          className="size-7 text-white/90 hover:text-white md:size-8 dark:text-black/90 dark:hover:text-black"
         >
           <path
             strokeLinecap="round"

@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-
-import FloatingActionButton from "../components/FloatingActionButton";
 import { DrawerWithNavigation } from "../components/NavigationDrawer";
 
 export default function Navbar() {
@@ -34,7 +32,9 @@ export default function Navbar() {
   }
 
   return (
-    <>
+    <div
+      className={`${location.hash === "#projects" || location.hash === "#more" ? "hidden" : "flex"} fixed z-40 w-screen bg-white/90 transition-opacity duration-200 ease-in dark:bg-black`}
+    >
       <nav className="flex h-20 w-full items-center justify-between px-6 font-semibold md:h-24 md:justify-around md:pt-0 dark:bg-black dark:text-white">
         <div className="rounded-full p-3 text-2xl tracking-tighter md:text-3xl">
           yazbeck.dev
@@ -94,9 +94,6 @@ export default function Navbar() {
           </div>
         </div>
       </nav>
-      <div className="fixed bottom-10 right-4 z-20 md:bottom-20 md:right-14 lg:right-24">
-        <FloatingActionButton />
-      </div>
-    </>
+    </div>
   );
 }

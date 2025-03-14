@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Default Carousel styles
+import MyImage from "./MyImage";
 
 interface ImageCarouselProps {
   images: string[]; // Array of image URLs
@@ -14,7 +15,7 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
   return (
     <div className="relative w-full">
       <Carousel
-        showThumbs
+        showThumbs={false}
         showIndicators={false}
         showStatus={false}
         useKeyboardArrows
@@ -44,14 +45,21 @@ const ImageCarousel: React.FC<ImageCarouselProps> = ({
       >
         {images.map((image, index) => (
           <div key={index} className="flex w-full object-contain sm:p-4">
-            <img
+            <MyImage
+              index={index}
+              image={image}
+              className={`w-full object-contain ${
+                typeof height === "string" ? `h-[${height}]` : `h-[${height}px]`
+              }`}
+            />
+            {/* <img
               src={image}
               alt={`Slide ${index + 1}`}
               className={`w-full object-contain ${
                 typeof height === "string" ? `h-[${height}]` : `h-[${height}px]`
               }`}
               loading="lazy"
-            />
+            /> */}
           </div>
         ))}
       </Carousel>

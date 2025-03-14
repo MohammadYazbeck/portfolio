@@ -25,7 +25,7 @@ type ProjectsSectionData = {
 
 export default function Project({ project }: { project: ProjectsSectionData }) {
   return (
-    <div className="mx-3 mt-5 flex flex-col items-center justify-center lg:mx-10 lg:mt-20 2xl:flex-row 2xl:items-start 2xl:space-x-24 2xl:space-y-0">
+    <div className="mx-3 mt-5 flex flex-col items-center justify-center rounded-3xl p-5 lg:mx-10 2xl:flex-row 2xl:items-start 2xl:space-x-24 2xl:space-y-0">
       <div
         className={`opacity-0 2xl:w-[45%] ${location.hash === "#projects" || location.hash === "#more" ? "flex animate-rl flex-col sm:animate-bt" : ""}`}
       >
@@ -35,7 +35,7 @@ export default function Project({ project }: { project: ProjectsSectionData }) {
             href={project.projectLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="mr-auto flex items-end text-4xl shadow-gray-400 text-shadow-lg lg:text-5xl dark:text-white dark:shadow-gray-600"
+            className="mr-auto flex items-end text-4xl shadow-gray-400 text-shadow-lg dark:text-white dark:shadow-gray-600"
           >
             {project.projectName}
 
@@ -56,7 +56,7 @@ export default function Project({ project }: { project: ProjectsSectionData }) {
           </a>
         ) : (
           <div
-            className="mr-auto flex cursor-help items-end text-4xl shadow-gray-400 text-shadow-lg lg:text-5xl dark:text-white dark:shadow-gray-600"
+            className="mr-auto flex cursor-help items-end text-4xl shadow-gray-400 text-shadow-lg dark:text-white dark:shadow-gray-600"
             title="The project source code is private upon customer request."
           >
             {project.projectName}
@@ -77,17 +77,17 @@ export default function Project({ project }: { project: ProjectsSectionData }) {
           </div>
         )}
 
-        <p className="mt-5 text-pretty tracking-wide lg:mt-10 lg:text-xl dark:text-gray-50">
+        <p className="mt-5 text-pretty tracking-wide lg:mt-10 lg:text-lg dark:text-gray-50">
           {project.summary}
         </p>
-        <p className="mt-10 cursor-default text-xl font-semibold tracking-tight lg:mt-14 dark:text-white">
+        <p className="mt-7 cursor-default text-xl font-semibold tracking-tight lg:mt-5 dark:text-white">
           Features
         </p>
-        <ul className="mt-3 flex flex-wrap gap-1 lg:mt-5 lg:gap-3">
+        <ul className="mt-3 flex flex-wrap gap-1 lg:mt-5">
           {project.features.map((feature) => (
             <li
               key={feature}
-              className="rounded-full bg-gradient-to-bl from-black/95 via-black/85 to-black/95 p-2 px-5 text-center text-sm font-semibold tracking-wide text-gray-100 lg:text-lg dark:from-white dark:via-gray-100 dark:to-white dark:font-bold dark:text-black"
+              className="rounded-full bg-gradient-to-bl from-black/95 via-black/85 to-black/95 p-2 px-5 text-center text-sm font-semibold tracking-wide text-gray-100 dark:from-white dark:via-gray-100 dark:to-white dark:font-bold dark:text-black"
             >
               {feature}
             </li>
@@ -101,7 +101,7 @@ export default function Project({ project }: { project: ProjectsSectionData }) {
             {project.tools.map((tool) => (
               <div
                 key={tool.name}
-                className="flex h-12 w-12 items-center justify-center sm:h-16 sm:w-16"
+                className="flex h-12 w-12 items-center justify-center sm:h-12 sm:w-12"
               >
                 <img
                   title={tool.name}
